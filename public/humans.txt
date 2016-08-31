@@ -1,0 +1,25 @@
+/* Guía Digital. Tu guía de comercios, servicios y profesionales. */
+
+/* TEAM */
+	Fundador: Sergio Juani
+	Contacto: sergiojuani@guiadigital.com.uy
+	Twitter: @guiadigital
+	From:Montevideo, Uruguay
+
+	Fundador: Alejadnro Esteche
+	Contacto: alejandroesteche@guiadigital.com.uy
+	Twitter: @guiadigital
+	From:Montevideo, Uruguay
+
+/* THANKS */
+
+	Info: Info
+	Contact: info@guiadigital.com.uy
+	Twitter: @guiadigital
+	From:Montevideo, Uruguay	
+
+/* SITE */
+	Last update:2015/09/01
+	Language: Español / English
+	Doctype: HTML5, CSS3
+	Software: Notepad++, FileZilla, NetBeans IDE 8.0

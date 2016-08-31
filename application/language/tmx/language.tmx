@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tmx>
+ <body>
+
+##############
+# Aplicacion #
+##############
+
+<tu tuid="nombre_aplicacion">
+    <tuv xml:lang="es"><seg>Sysav LOCAL :: </seg></tuv>
+    <tuv xml:lang="en"><seg>Sysav LOCAL :: </seg></tuv>
+</tu>
+
+<tu tuid="sitio_realizado_por">
+    <tuv xml:lang="es"><seg>Sitio realizado por</seg></tuv>
+    <tuv xml:lang="en"><seg>Created for</seg></tuv>
+</tu>
+
+##########
+# Sesion #
+##########
+
+<tu tuid="usuario">
+    <tuv xml:lang="es"><seg>usuario</seg></tuv>
+    <tuv xml:lang="en"><seg>user</seg></tuv>
+</tu>   
+
+<tu tuid="ultima_sesion">
+    <tuv xml:lang="es"><seg>ultima sesion</seg></tuv>
+    <tuv xml:lang="en"><seg>last session</seg></tuv>
+</tu>     
+     
+<tu tuid="ultima_ip">
+    <tuv xml:lang="es"><seg>ultima IP</seg></tuv>
+    <tuv xml:lang="en"><seg>last IP</seg></tuv>
+</tu>
+
+<tu tuid="iniciar_sesion">
+    <tuv xml:lang="es"><seg>Iniciar sesion</seg></tuv>
+    <tuv xml:lang="en"><seg>Login</seg></tuv>
+</tu>
+
+<tu tuid="cerrar_sesion">
+    <tuv xml:lang="es"><seg>Cerrar sesion</seg></tuv>
+    <tuv xml:lang="en"><seg>Logout</seg></tuv>
+</tu>
+
+##########
+# Tablas #
+##########
+
+<tu tuid="id">
+    <tuv xml:lang="es"><seg>Id</seg></tuv>
+    <tuv xml:lang="en"><seg>Id</seg></tuv>
+</tu>
+
+<tu tuid="nombre">
+    <tuv xml:lang="es"><seg>Nombre</seg></tuv>
+    <tuv xml:lang="en"><seg>Name</seg></tuv>
+</tu>
+
+<tu tuid="categoria">
+    <tuv xml:lang="es"><seg>Categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Category</seg></tuv>
+</tu>
+
+<tu tuid="espectaculo">
+    <tuv xml:lang="es"><seg>Espectaculo</seg></tuv>
+    <tuv xml:lang="en"><seg>Show</seg></tuv>
+</tu>
+
+<tu tuid="evento">
+    <tuv xml:lang="es"><seg>Evento</seg></tuv>
+    <tuv xml:lang="en"><seg>Event</seg></tuv>
+</tu>
+
+<tu tuid="lugar">
+    <tuv xml:lang="es"><seg>Lugar</seg></tuv>
+    <tuv xml:lang="en"><seg>Place</seg></tuv>
+</tu>
+
+<tu tuid="sector">
+    <tuv xml:lang="es"><seg>Sector</seg></tuv>
+    <tuv xml:lang="en"><seg>Sector</seg></tuv>
+</tu>
+
+<tu tuid="precio">
+    <tuv xml:lang="es"><seg>Precio</seg></tuv>
+    <tuv xml:lang="en"><seg>Price</seg></tuv>
+</tu>
+
+<tu tuid="cantidad">
+    <tuv xml:lang="es"><seg>Cantidad</seg></tuv>
+    <tuv xml:lang="en"><seg>Quantity</seg></tuv>
+</tu>
+
+<tu tuid="total">
+    <tuv xml:lang="es"><seg>Total</seg></tuv>
+    <tuv xml:lang="en"><seg>Total</seg></tuv>
+</tu>
+
+<tu tuid="imagen">
+    <tuv xml:lang="es"><seg>Imagen</seg></tuv>
+    <tuv xml:lang="en"><seg>Image</seg></tuv>
+</tu>
+
+<tu tuid="cambiar_imagen">
+    <tuv xml:lang="es"><seg>Cambiar imagen</seg></tuv>
+    <tuv xml:lang="en"><seg>Change image</seg></tuv>
+</tu>
+
+<tu tuid="descripcion">
+    <tuv xml:lang="es"><seg>Descripcion</seg></tuv>
+    <tuv xml:lang="en"><seg>Description</seg></tuv>
+</tu>
+
+<tu tuid="ingrese_telefono">
+    <tuv xml:lang="es"><seg>Ingrese su telefono</seg></tuv>
+    <tuv xml:lang="en"><seg>Enter your phone</seg></tuv>
+</tu>
+
+<tu tuid="ingrese_pin">
+    <tuv xml:lang="es"><seg>Ingrese PIN</seg></tuv>
+    <tuv xml:lang="en"><seg>Enter PIN</seg></tuv>
+</tu>
+
+<tu tuid="fecha_creado">
+    <tuv xml:lang="es"><seg>Fecha creado</seg></tuv>
+    <tuv xml:lang="en"><seg>Date created</seg></tuv>
+</tu>
+
+<tu tuid="fecha_actualizado">
+    <tuv xml:lang="es"><seg>Fecha actualizado</seg></tuv>
+    <tuv xml:lang="en"><seg>Date updated</seg></tuv>
+</tu>
+
+<tu tuid="campos_obligatorios">
+    <tuv xml:lang="es"><seg>(*) Campos Obligatorios</seg></tuv>
+    <tuv xml:lang="en"><seg>(*) Required fields</seg></tuv>
+</tu>
+
+<tu tuid="total_entradas">
+    <tuv xml:lang="es"><seg>Total entradas vendidas</seg></tuv>
+    <tuv xml:lang="en"><seg>Total tickets sold</seg></tuv>
+</tu>
+
+<tu tuid="total_facturado">
+    <tuv xml:lang="es"><seg>Total facturado ($)</seg></tuv>
+    <tuv xml:lang="en"><seg>Total charged ($)</seg></tuv>
+</tu>
+
+<tu tuid="fecha">
+    <tuv xml:lang="es"><seg>Fecha</seg></tuv>
+    <tuv xml:lang="en"><seg>Date</seg></tuv>
+</tu>
+
+<tu tuid="hora">
+    <tuv xml:lang="es"><seg>Hora</seg></tuv>
+    <tuv xml:lang="en"><seg>Time</seg></tuv>
+</tu>
+
+<tu tuid="entradas_habilitadas">
+    <tuv xml:lang="es"><seg>Entradas habilitadas</seg></tuv>
+    <tuv xml:lang="en"><seg>Tickets enabled</seg></tuv>
+</tu>
+
+<tu tuid="estado">
+    <tuv xml:lang="es"><seg>Estado</seg></tuv>
+    <tuv xml:lang="en"><seg>Status</seg></tuv>
+</tu>
+
+<tu tuid="direccion">
+    <tuv xml:lang="es"><seg>Direccion</seg></tuv>
+    <tuv xml:lang="en"><seg>Address</seg></tuv>
+</tu>
+
+<tu tuid="telefono">
+    <tuv xml:lang="es"><seg>Telefono</seg></tuv>
+    <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+</tu>
+
+<tu tuid="apellido">
+    <tuv xml:lang="es"><seg>Apellido</seg></tuv>
+    <tuv xml:lang="en"><seg>Lastname</seg></tuv>
+</tu>
+
+<tu tuid="mail">
+    <tuv xml:lang="es"><seg>E-mail</seg></tuv>
+    <tuv xml:lang="en"><seg>E-mail</seg></tuv>
+</tu>
+
+<tu tuid="idioma">
+    <tuv xml:lang="es"><seg>Idioma</seg></tuv>
+    <tuv xml:lang="en"><seg>Language</seg></tuv>
+</tu>
+
+<tu tuid="rol">
+    <tuv xml:lang="es"><seg>Rol</seg></tuv>
+    <tuv xml:lang="en"><seg>Role</seg></tuv>
+</tu>
+
+<tu tuid="password">
+    <tuv xml:lang="es"><seg>Password</seg></tuv>
+    <tuv xml:lang="en"><seg>Password</seg></tuv>
+</tu>
+
+<tu tuid="capacidad">
+    <tuv xml:lang="es"><seg>Capacidad</seg></tuv>
+    <tuv xml:lang="en"><seg>Capacity</seg></tuv>
+</tu>
+
+<tu tuid="pertenece_lugar">
+    <tuv xml:lang="es"><seg>Pertenece al lugar</seg></tuv>
+    <tuv xml:lang="en"><seg>Belongs to place</seg></tuv>
+</tu>
+
+<tu tuid="documento">
+    <tuv xml:lang="es"><seg>Documento</seg></tuv>
+    <tuv xml:lang="en"><seg>Document</seg></tuv>
+</tu>
+
+<tu tuid="fecha_ticket">
+    <tuv xml:lang="es"><seg>Fecha de compra</seg></tuv>
+    <tuv xml:lang="en"><seg>Date of buy</seg></tuv>
+</tu>
+
+<tu tuid="hora_evento">
+    <tuv xml:lang="es"><seg>Hora de evento</seg></tuv>
+    <tuv xml:lang="en"><seg>Time of event</seg></tuv>
+</tu>
+
+<tu tuid="cantidad_entradas">
+    <tuv xml:lang="es"><seg>Cantidad de entradas</seg></tuv>
+    <tuv xml:lang="en"><seg>Number of entries</seg></tuv>
+</tu>
+
+###########
+# Botones #
+###########
+
+<tu tuid="agregar">
+    <tuv xml:lang="es"><seg>agregar</seg></tuv>
+    <tuv xml:lang="en"><seg>add</seg></tuv>
+</tu>
+
+<tu tuid="editar">
+    <tuv xml:lang="es"><seg>editar</seg></tuv>
+    <tuv xml:lang="en"><seg>edit</seg></tuv>
+</tu>
+
+<tu tuid="eliminar">
+    <tuv xml:lang="es"><seg>eliminar</seg></tuv>
+    <tuv xml:lang="en"><seg>delete</seg></tuv>
+</tu>
+
+<tu tuid="guardar">
+    <tuv xml:lang="es"><seg>guardar</seg></tuv>
+    <tuv xml:lang="en"><seg>save</seg></tuv>
+</tu>
+
+<tu tuid="confirmar">
+    <tuv xml:lang="es"><seg>confirmar</seg></tuv>
+    <tuv xml:lang="en"><seg>confirm</seg></tuv>
+</tu>
+
+<tu tuid="confirmar_compra">
+    <tuv xml:lang="es"><seg>Confirmar compra</seg></tuv>
+    <tuv xml:lang="en"><seg>Confirm buy</seg></tuv>
+</tu>
+
+<tu tuid="buscar">
+    <tuv xml:lang="es"><seg>buscar</seg></tuv>
+    <tuv xml:lang="en"><seg>search</seg></tuv>
+</tu>
+
+###########
+# Idiomas #
+###########
+
+<tu tuid="espanol">
+    <tuv xml:lang="es"><seg>Espanol</seg></tuv>
+    <tuv xml:lang="en"><seg>Spanish</seg></tuv>
+</tu>
+
+<tu tuid="ingles">
+    <tuv xml:lang="es"><seg>Ingles</seg></tuv>
+    <tuv xml:lang="en"><seg>English</seg></tuv>
+</tu>
+
+#####################
+# Mensajes de error #
+#####################
+
+<tu tuid="alfanumerico">
+    <tuv xml:lang="es"><seg>Alfanumerico</seg></tuv>
+    <tuv xml:lang="en"><seg>Alfanumeric</seg></tuv>
+</tu>
+
+
+########
+# Menú #
+########
+
+<tu tuid="categorias">
+    <tuv xml:lang="es"><seg>categorias</seg></tuv>
+    <tuv xml:lang="en"><seg>category</seg></tuv>
+</tu>
+
+<tu tuid="espectaculos">
+    <tuv xml:lang="es"><seg>espectaculos</seg></tuv>
+    <tuv xml:lang="en"><seg>shows</seg></tuv>
+</tu>
+
+<tu tuid="eventos">
+    <tuv xml:lang="es"><seg>eventos</seg></tuv>
+    <tuv xml:lang="en"><seg>events</seg></tuv>
+</tu>
+
+<tu tuid="lugares">
+    <tuv xml:lang="es"><seg>lugares</seg></tuv>
+    <tuv xml:lang="en"><seg>places</seg></tuv>
+</tu>
+
+<tu tuid="sectores">
+    <tuv xml:lang="es"><seg>sectores</seg></tuv>
+    <tuv xml:lang="en"><seg>sectors</seg></tuv>
+</tu>
+
+<tu tuid="tickets">
+    <tuv xml:lang="es"><seg>tickets</seg></tuv>
+    <tuv xml:lang="en"><seg>tickets</seg></tuv>
+</tu>
+
+<tu tuid="reportes">
+    <tuv xml:lang="es"><seg>reportes</seg></tuv>
+    <tuv xml:lang="en"><seg>reports</seg></tuv>
+</tu>
+
+<tu tuid="usuarios">
+    <tuv xml:lang="es"><seg>usuarios</seg></tuv>
+    <tuv xml:lang="en"><seg>users</seg></tuv>
+</tu>
+
+##############
+# Categorias #
+##############
+
+
+<tu tuid="listado_categorias">
+    <tuv xml:lang="es"><seg>Listado de categorias</seg></tuv>
+    <tuv xml:lang="en"><seg>List of category</seg></tuv>
+</tu>
+
+<tu tuid="ver_categoria">
+    <tuv xml:lang="es"><seg>Ver los espectaculos de la categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>View shows to category</seg></tuv>
+</tu>
+
+<tu tuid="agregar_categoria">
+    <tuv xml:lang="es"><seg>Agregar categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Add category</seg></tuv>
+</tu>
+
+<tu tuid="editar_categoria">
+    <tuv xml:lang="es"><seg>Editar categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit category</seg></tuv>
+</tu>
+
+<tu tuid="eliminar_categoria">
+    <tuv xml:lang="es"><seg>Eliminar categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Delete category</seg></tuv>
+</tu>
+
+<tu tuid="seguro_elimina_categoria">
+    <tuv xml:lang="es"><seg>Seguro que desea eliminar la categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Sure you want to delete the category</seg></tuv>
+</tu>
+
+################
+# Espectaculos #
+################
+
+<tu tuid="listado_espectaculos">
+    <tuv xml:lang="es"><seg>Listado de espectaculos</seg></tuv>
+    <tuv xml:lang="en"><seg>List of shows</seg></tuv>
+</tu>
+
+<tu tuid="ver_espectaculo">
+    <tuv xml:lang="es"><seg>Ver los eventos del espectaculo</seg></tuv>
+    <tuv xml:lang="en"><seg>View events to show</seg></tuv>
+</tu>
+
+<tu tuid="agregar_espectaculo">
+    <tuv xml:lang="es"><seg>Agregar espectaculo</seg></tuv>
+    <tuv xml:lang="en"><seg>Add show</seg></tuv>
+</tu>
+
+<tu tuid="editar_espectaculo">
+    <tuv xml:lang="es"><seg>Editar espectaculo</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit show</seg></tuv>
+</tu>
+
+<tu tuid="no_imagen">
+    <tuv xml:lang="es"><seg>Sin imagen</seg></tuv>
+    <tuv xml:lang="en"><seg>No image</seg></tuv>
+</tu>
+
+###########
+# Eventos #
+###########
+
+<tu tuid="agregar_evento">
+    <tuv xml:lang="es"><seg>Agregar evento</seg></tuv>
+    <tuv xml:lang="en"><seg>Add event</seg></tuv>
+</tu>
+
+<tu tuid="editar_evento">
+    <tuv xml:lang="es"><seg>Editar evento</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit event</seg></tuv>
+</tu>
+
+<tu tuid="listado_eventos">
+    <tuv xml:lang="es"><seg>Listado de eventos</seg></tuv>
+    <tuv xml:lang="en"><seg>List of events</seg></tuv>
+</tu>
+
+<tu tuid="ver_evento">
+    <tuv xml:lang="es"><seg>Ver el evento</seg></tuv>
+    <tuv xml:lang="en"><seg>View event</seg></tuv>
+</tu>
+
+<tu tuid="fecha_evento">
+    <tuv xml:lang="es"><seg>Fecha y hora</seg></tuv>
+    <tuv xml:lang="en"><seg>Date and time</seg></tuv>
+</tu>
+
+<tu tuid="estado_evento">
+    <tuv xml:lang="es"><seg>Estado</seg></tuv>
+    <tuv xml:lang="en"><seg>State</seg></tuv>
+</tu>
+
+<tu tuid="comprar_entrada">
+    <tuv xml:lang="es"><seg>Comprar entrada</seg></tuv>
+    <tuv xml:lang="en"><seg>Buy ticket</seg></tuv>
+</tu>
+
+###########
+# Lugares #
+###########
+
+<tu tuid="listado_lugares">
+    <tuv xml:lang="es"><seg>Listado de lugares</seg></tuv>
+    <tuv xml:lang="en"><seg>List of places</seg></tuv>
+</tu>
+
+<tu tuid="agregar_lugar">
+    <tuv xml:lang="es"><seg>Agregar lugar</seg></tuv>
+    <tuv xml:lang="en"><seg>Add place</seg></tuv>
+</tu>
+
+<tu tuid="editar_lugar">
+    <tuv xml:lang="es"><seg>Editar lugar</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit place</seg></tuv>
+</tu>
+
+<tu tuid="eliminar_lugar">
+    <tuv xml:lang="es"><seg>Eliminar lugar</seg></tuv>
+    <tuv xml:lang="en"><seg>Delete place</seg></tuv>
+</tu>
+
+###########
+# Sectores #
+###########
+
+<tu tuid="listado_sectores">
+    <tuv xml:lang="es"><seg>Listado de sectores</seg></tuv>
+    <tuv xml:lang="en"><seg>List of sectors</seg></tuv>
+</tu>
+
+<tu tuid="agregar_sector">
+    <tuv xml:lang="es"><seg>Agregar sector</seg></tuv>
+    <tuv xml:lang="en"><seg>Add sector</seg></tuv>
+</tu>
+
+<tu tuid="editar_sector">
+    <tuv xml:lang="es"><seg>Editar sector</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit sector</seg></tuv>
+</tu>
+
+<tu tuid="eliminar_sector">
+    <tuv xml:lang="es"><seg>Eliminar sector</seg></tuv>
+    <tuv xml:lang="en"><seg>Delete sector</seg></tuv>
+</tu>
+
+
+
+###########
+# Tickets #
+###########
+
+<tu tuid="comprar_entrada">
+    <tuv xml:lang="es"><seg>Comprar entradas</seg></tuv>
+    <tuv xml:lang="en"><seg>Buy tickets</seg></tuv>
+</tu>
+
+<tu tuid="comprar_entradas_para">
+    <tuv xml:lang="es"><seg>Comprar entradas para</seg></tuv>
+    <tuv xml:lang="en"><seg>Buy tickets</seg></tuv>
+</tu>
+
+<tu tuid="listado_tickets">
+    <tuv xml:lang="es"><seg>Listado de tickets</seg></tuv>
+    <tuv xml:lang="en"><seg>List of tickets</seg></tuv>
+</tu>
+
+############
+# Reportes #
+############
+
+<tu tuid="reportes">
+    <tuv xml:lang="es"><seg>Reportes</seg></tuv>
+    <tuv xml:lang="en"><seg>Reports</seg></tuv>
+</tu>
+
+<tu tuid="reporte_categorias">
+    <tuv xml:lang="es"><seg>Reporte de categorias</seg></tuv>
+    <tuv xml:lang="en"><seg>Report category</seg></tuv>
+</tu>
+
+<tu tuid="seleccione_reporte">
+    <tuv xml:lang="es"><seg>Seleccione reporte</seg></tuv>
+    <tuv xml:lang="en"><seg>Select report</seg></tuv>
+</tu>
+
+<tu tuid="seleccione_categoria">
+    <tuv xml:lang="es"><seg>Seleccione categoria</seg></tuv>
+    <tuv xml:lang="en"><seg>Select category</seg></tuv>
+</tu>
+
+<tu tuid="seleccione_rol">
+    <tuv xml:lang="es"><seg>Seleccione rol</seg></tuv>
+    <tuv xml:lang="en"><seg>Select role</seg></tuv>
+</tu>
+
+<tu tuid="imprimir_pdf">
+    <tuv xml:lang="es"><seg>Imprimir PDF</seg></tuv>
+    <tuv xml:lang="en"><seg>Print PDF</seg></tuv>
+</tu>
+
+###########
+# Usuario #
+###########
+
+<tu tuid="listado_usuarios">
+    <tuv xml:lang="es"><seg>Listado de usuarios</seg></tuv>
+    <tuv xml:lang="en"><seg>List of users</seg></tuv>
+</tu>
+
+<tu tuid="agregar_usuario">
+    <tuv xml:lang="es"><seg>Agregar usuario</seg></tuv>
+    <tuv xml:lang="en"><seg>Add user</seg></tuv>
+</tu>
+
+<tu tuid="editar_usuario">
+    <tuv xml:lang="es"><seg>Editar usuario</seg></tuv>
+    <tuv xml:lang="en"><seg>Edit user</seg></tuv>
+</tu>
+
+<tu tuid="eliminar_usuario">
+    <tuv xml:lang="es"><seg>Eliminar usuario</seg></tuv>
+    <tuv xml:lang="en"><seg>Delete user</seg></tuv>
+</tu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+   <tu tuid="update_show">
+   <tuv xml:lang="es">
+    <seg>Actualizar Espectaculo</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Update Show</seg>
+   </tuv>
+  </tu>
+  <tu tuid="First">
+   <tuv xml:lang="es">
+    <seg>Primero</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>First</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Previous">
+   <tuv xml:lang="es">
+    <seg>Previo</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Previous</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Last">
+   <tuv xml:lang="es">
+    <seg>Ultimo</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Last</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Next">
+   <tuv xml:lang="es">
+    <seg>Siguiente</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Next</seg>
+   </tuv>
+  </tu>
+  
+  
+  <tu tuid="last_ip">
+   <tuv xml:lang="es">
+    <seg>última IP</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>last IP</seg>
+   </tuv>
+  </tu>
+  <tu tuid="last_session">
+   <tuv xml:lang="es">
+    <seg>última sesión</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>last session</seg>
+   </tuv>
+  </tu>
+  
+  <tu tuid="events">
+   <tuv xml:lang="es">
+    <seg>Eventos</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Events</seg>
+   </tuv>
+  </tu>
+  <tu tuid="categories">
+   <tuv xml:lang="es">
+    <seg>Categorías</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Categories</seg>
+   </tuv>
+  </tu>
+  <tu tuid="shows">
+   <tuv xml:lang="es">
+    <seg>Espectaculos</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Shows</seg>
+   </tuv>
+  </tu>
+  <tu tuid="users">
+   <tuv xml:lang="es">
+    <seg>Usuarios</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Users</seg>
+   </tuv>
+  </tu>
+  <tu tuid="products">
+   <tuv xml:lang="es">
+    <seg>Productos</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Products</seg>
+   </tuv>
+  </tu>
+   <tu tuid="sign_out">
+   <tuv xml:lang="es">
+    <seg>Salir</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Sign Out</seg>
+   </tuv>
+  </tu>
+  
+  <tu tuid="product_list">
+   <tuv xml:lang="es">
+    <seg>Listado de productos</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Product list</seg>
+   </tuv>
+  </tu>
+
+  <tu tuid="image">
+   <tuv xml:lang="es">
+    <seg>Imagen</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Image</seg>
+   </tuv>
+  </tu>
+  
+  <tu tuid="desc">
+   <tuv xml:lang="es">
+    <seg>Descripción</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Description</seg>
+   </tuv>
+  </tu>
+  <tu tuid="price">
+   <tuv xml:lang="es">
+    <seg>Precio</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Price</seg>
+   </tuv>
+  </tu>
+  <tu tuid="created">
+   <tuv xml:lang="es">
+    <seg>Creado</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Created</seg>
+   </tuv>
+  </tu>
+  <tu tuid="updated">
+   <tuv xml:lang="es">
+    <seg>Actualizado</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Updated</seg>
+   </tuv>
+  </tu>
+  <tu tuid="add">
+   <tuv xml:lang="es">
+    <seg>Agregar</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Add</seg>
+   </tuv>
+  </tu>
+  <tu tuid="search">
+   <tuv xml:lang="es">
+    <seg>Buscar</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Search</seg>
+   </tuv>
+  </tu>
+  <tu tuid="page">
+   <tuv xml:lang="es">
+    <seg>Pagina</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Page</seg>
+   </tuv>
+  </tu>
+  <tu tuid="of">
+   <tuv xml:lang="es">
+    <seg>de</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>of</seg>
+   </tuv>
+  </tu>
+  <tu tuid="go_page">
+   <tuv xml:lang="es">
+    <seg>Ir a pagina</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Go to page</seg>
+   </tuv>
+  </tu>  
+  <tu tuid="send">
+   <tuv xml:lang="es">
+    <seg>Enviar</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Send</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="add_product">
+   <tuv xml:lang="es">
+    <seg>Agregar Producto</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Add Product</seg>
+   </tuv>
+  </tu> 
+   <tu tuid="required_fields">
+   <tuv xml:lang="es">
+    <seg>Campos Obligatorios</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Required fields</seg>
+   </tuv>
+  </tu> 
+   <tu tuid="saved_ok">
+   <tuv xml:lang="es">
+    <seg>El registro se ha guardado correctamente</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Record has been saved successfully</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="select_id">
+   <tuv xml:lang="es">
+    <seg>Seleccione un id para continuar</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Select id to continue</seg>
+   </tuv>
+  </tu> 
+ <tu tuid="invalid_id">
+   <tuv xml:lang="es">
+    <seg>Id no válid</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Invalid id</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="delete_ok">
+   <tuv xml:lang="es">
+    <seg>El registro se ha eliminado correctamente</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Record has been deleted successfully</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="update_ok">
+   <tuv xml:lang="es">
+    <seg>El registro se ha actualizado correctamente</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Record has been updated successfully</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="update">
+   <tuv xml:lang="es">
+    <seg>Actualizar</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Update</seg>
+   </tuv>
+  </tu> 
+   <tu tuid="update_product">
+   <tuv xml:lang="es">
+    <seg>Actualizar Producto</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Update Product</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="confirm_delete">
+   <tuv xml:lang="es">
+    <seg>Seguro que desea eliminar el item?</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Are you sure you want to delete this item?</seg>
+   </tuv>
+  </tu> 
+  <tu tuid="invalid_token">
+   <tuv xml:lang="es">
+    <seg>Token inválido</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Invalid Token</seg>
+   </tuv>
+  </tu>
+  
+  <tu tuid="footer">
+   <tuv xml:lang="es">
+    <seg>CAMPUS CENTRO Cuareim 1451 Tel.: (598) 2 902 15 05 Montevideo, Uruguay CAMPUS POCITOS Bvar España 2633 Tel.: (598) 2 707 18 06 Montevideo, Uruguay
+  </seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>CAMPUS CENTER Cuareim 1451 Tel: (598) 2 902 15 05 Montevideo, Uruguay 2633 CAMPUS POCITOS Bvar Spain Tel: (598) 2 707 18 06 Montevideo, Uruguay</seg>
+   </tuv>
+  </tu>
+   <tu tuid="places">
+   <tuv xml:lang="es">
+    <seg>Lugares</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Places</seg>
+   </tuv>
+  </tu>
+   <tu tuid="sectors">
+   <tuv xml:lang="es">
+    <seg>Sectores</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Sectores</seg>
+   </tuv>
+  </tu>
+   <tu tuid="places and sectors">
+   <tuv xml:lang="es">
+    <seg>Lugares y Sectores</seg>
+   </tuv>
+   <tuv xml:lang="en">
+    <seg>Places and Sectors</seg>
+   </tuv>
+  </tu>
+  
+  
+  
+ </body>
+</tmx>

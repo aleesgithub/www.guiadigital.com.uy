@@ -1,0 +1,99 @@
+
+input.text, select.text, textarea.text {
+   background: dddddd;
+   border: 1px solid #666666;
+   border-radius: 5px 5px 5px 5px;
+   color: #393939;
+   font-size: 16px;
+   font-family: sans-serif;
+   padding: 3px;
+   box-shadow: 3px 3px 5px #777;
+   filter: alpha(opacity=60); 
+   opacity: .60;
+   width: 90%; 
+}
+input.text:focus{
+   background: #cae1ff;
+   border: 1px solid #008080;
+   box-shadow: 3px 3px 5px #008080;
+   
+  
+}
+.formatblock{
+    margin: 5px;
+    padding: 2px;
+    font-size: 12px;
+    color: #393939;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px 3px 3px 3px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: #666666;
+}
+.mailTo{
+   
+   border: 0px; 
+   
+   color: #393939;
+   font-size: 22px;
+   font-family: sans-serif;
+   padding:6px;
+   
+   filter: alpha(opacity=60); 
+   opacity: .60;
+   width: 99%; 
+   
+}
+
+.iframemail{
+   background-color: #fff; height: 370px; width: 100%;border: solid 0px #cccccc; 
+}
+select.slt{
+    padding: 2px;
+    width: 40%;
+    box-shadow: 3px 3px 5px #555;
+    font-size: 16px;
+}
+input.btn{
+   background: url(/img/textura1.jpg); 
+   border: 1px solid #fff;
+   box-shadow: 3px 3px 5px #555;
+   border-radius: 5px 5px 5px 5px;
+   color: #fff;
+   font-size: 16px;
+   font-family: sans-serif;
+   padding: 2px;
+   
+   cursor: pointer;
+}
+input.btn:hover{
+   background: url(/img/textura1.jpg) no-repeat; 
+   color: #ffffff;
+   
+}
+input.btn:disabled{
+    background-color: #fff; 
+    filter: alpha(opacity=50); 
+    opacity: .50;
+    cursor: inherit;
+   color: #aaa;
+}
+
+.textarea{
+    background-color: #eee;
+    border: 1px solid #bbb;
+    padding: 2px;
+    filter: alpha(opacity=70); 
+    opacity: .70;
+}
+.textresp{
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 2px;
+    filter: alpha(opacity=70); 
+    opacity: .70;
+}
+

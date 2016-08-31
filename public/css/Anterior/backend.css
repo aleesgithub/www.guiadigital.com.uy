@@ -1,0 +1,1217 @@
+.backend{
+    
+    background: url(/img/textura1.jpg); 
+    //background-color: #999;
+    
+    background-size: cover;
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    -o-background-size: cover
+}
+.backend_cuerpo{
+    position:absolute;  top:9%;    height:86%; width:83%;  left:17%;    z-index:2; 
+    background-color:#fff; 
+    //background: url(/img/content.png);
+    filter: alpha(opacity=85); 
+    opacity: .85; 
+    box-shadow: 5px 5px 30px #000;
+    
+}
+.nota{
+    width:90%; background-color: #eee; filter: alpha(opacity=90); 
+    opacity: .90;border: solid 1px #bbb;
+}
+.acceso{
+    background-color: #E2EFFC; margin: 5px; font-size: 10px; font-family: Arial, Sans-serif; padding: 2px;
+    border: solid 1px #7595C6;
+    -moz-border-radius: 10px 0;
+    -webkit-border-radius: 10px 0;
+    border-radius: 10px 0;
+}
+.notify{
+    position: absolute;top: 10%;left: 50%;
+    background-color: red; margin: 5px; font-size: 16px; font-family: Arial, Sans-serif; 
+    border: solid 1px #7595C6;
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.autocomplete{
+    position: absolute;  
+    background-color: #ffffff; 
+    //background: url(/img/fondautocomplete.jpg);   
+    overflow: left;
+    width: auto;
+    border: solid 1px #7595C6;  
+    padding: 2px;
+    display: block;
+    
+    font-style: normal;
+    font-size: 12px; 
+    font-family: Arial, Sans-serif;
+    list-style:none;
+    z-index: 10;
+    
+}
+.autocomplete li{
+    
+    
+    padding: 2px; 
+    
+   
+}
+.autocomplete li:hover{
+    box-shadow: 3px 3px 3px #aaa;
+    background: -webkit-linear-gradient(#ccc, #000);
+    background: -moz-linear-gradient(#ccc, #000);
+    background: -o-linear-gradient(#ccc, #000);   
+    filter: alpha(opacity=50);  opacity: .50;
+    
+    
+}
+.autocomplete li:hover a{
+    
+    color: #fff;
+    
+    
+}
+.autocomplete li a{
+    background-color: fff;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+}
+.autocomplete li a:hover{
+    color: #fff;
+}
+.email{
+    //display: inline;
+    position: relative;
+    float: left;
+   
+    //line-height:14px;
+    //background-color: #E7EFD6; 
+    background: url(/img/textura1.jpg) no-repeat;
+    font-size: 12px; 
+    font-style: normal;
+    color: #fff;
+    padding: 5px;
+    margin: 2px;
+    border: solid 1px #7595C6;
+    list-style:none;
+    
+    
+}
+.enlace{
+    position: relative;
+    float: left;
+    vertical-align: central;
+    background-color: #eee;
+    font-size: 12px; 
+    font-style: normal;
+    color: #31708f;
+    padding: 0.1em;
+    list-style:none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    
+}
+
+.antecedente{
+    position: relative; width:80%; background-color: #E2EFFC;  left: 10%;border: solid 1px #7595C6;  padding: 2px;
+    margin: 5px; font-size: 12px; font-family: Arial, Sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.comentario{
+    position: relative; width:80%; background-color: #E7EFD6;  left: 10%;border: solid 1px #cccc33;  padding: 2px;
+    margin: 5px; font-size: 12px; font-family: Arial, Sans-serif;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.notabtn{
+    width:30%; text-align: right;left: 65%;  background-color: #eee;  position: relative; bottom: 4px;
+}
+.content{
+    position:absolute;  top:9%;    height:86%; width:80%;  left:20%;    z-index:11; overflow:auto;
+}
+
+.footer{
+        position:absolute;  top:95%;    height:4%; width:100%;  left:0%;    z-index:2;
+        color: #fff; font-family:Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.mapa{
+    position: absolute; width: 40%; height: 80%;left: 55%;top:17%;
+    -moz-box-shadow:0 0 20px #777;
+    -webkit-box-shadow:0 0 20px #777;
+    box-shadow:0 0 20px #777;
+}
+.reloj{
+    position:absolute;  top:75%;    left:1%;   height:10%; width:16%;  z-index:3; color: #fff; font-size: 3em; font-family: Arial, Helvetica, sans-serif; 
+}
+.fecha{
+    position:absolute;  top:85%;    left:1%;   height:5%; width:16%;  z-index:3; color: #ddd; font-size: 1.2em;  font-family: Arial, Helvetica, sans-serif; 
+}
+.logo{
+    position:absolute;  top:1%;    left:2%;  height:5%; width:10%;  z-index:3;  filter: alpha(opacity=80);  opacity: .80;
+}
+.logo span{
+    font-size: 2.5em;
+    //text-shadow:0 0 5px #fff;
+    //font-weight: bold;
+    color: #fff;
+}
+.logo span #gui{
+    //color: #278dbc;    
+}
+.logo span #di{
+    //color: #777;
+}
+
+.inicio{ 
+    position: absolute; top: 25%; left: 25%;
+    background: url(/img/inicio.jpg) no-repeat;   width: 50%; height: 50%; filter: alpha(opacity=10); opacity: .10;
+}
+.tool{
+    position:absolute;  top:3%;    left:70%;   height:6%; width:20%;  z-index:3;
+    background-color: #fff; text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    filter: alpha(opacity=80);  opacity: .80;
+    padding: 3 0 0 0;
+}
+.item{
+    
+    background: url(/img/textura1.jpg) no-repeat; 
+    color: #FCC654;
+    text-align: center;
+    filter: alpha(opacity=80);  opacity: .80;
+    padding: 3 0 0 0;
+    z-index: 20;
+}
+.titulo{
+    position:absolute;     left:30%;   height:6%; width:60%;  z-index:5;
+    text-align: left;
+    font-size:32px;
+    color: #fff;
+    text-shadow: 8px 8px 8px #000;
+    
+}
+*{
+	/* A universal CSS reset */
+	margin:0;
+	padding:0;
+}
+.globpreg {
+  background: #fff; /* el color de fondo */
+  border: solid 1px;
+  border-color: #aaa;
+  color: #3d4f0c; /* el color del texto */
+  font-family: Arial, Sans-serif;
+  font-size: 12px;
+  padding: 10px 10px 10px 5px;
+  text-align: left;
+  width: 85%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+}
+.globpreg:after {
+  border: solid 16px transparent;
+  border-top-color: #aaa;  /* igual al color de fondo */
+  border-bottom: 0;
+  bottom: -26px;  /* igual al borde + el padding-bottom de la definición anterior */
+  content: "";
+  display: block;
+  height: 0px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  left: -30%;
+  width: 0;
+}
+.globresp {
+  background: #E7EFD6; /* el color de fondo */
+  color: #333; /* el color del texto */
+  border: solid 1px;
+  border-color: #7da315;
+  font-family: Arial, Sans-serif;
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+  width: 80%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 5%;
+}
+.globresp:before {
+  border: solid 16px transparent;
+  border-bottom-color: #7da315;  /* igual al color de fondo */
+  border-top: 0;
+  bottom: 22px;  /* igual al borde + el padding-bottom de la definición anterior */
+  content: "";
+  display: block;
+  height: 0px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  left: -27%;
+  width: 0;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+}
+
+.table th { 
+    background: -webkit-linear-gradient(#ddd, #333);
+    background: -moz-linear-gradient(#ddd,#333);
+    background: -o-linear-gradient(#ddd, #333);
+    
+    -moz-box-shadow:0 0 5px #9ddff5;
+    -webkit-box-shadow:0 0 5px #9ddff5;
+    box-shadow:0 0 5px #9ddff5;
+    
+    font-weight:normal;
+    font-family: arial;
+    color: #fff; font-size: 16px; 
+    -moz-box-shadow:0 0 5px #fff;
+    -webkit-box-shadow:0 0 5px #fff;
+    box-shadow:0 0 5px #fff;
+    padding: 2px; text-align: left; border: 1px solid #fff;  }
+
+.table tr:nth-child(odd) {background-color: #fff;   border-top: 1px solid #fff; padding: 1px;}
+
+.table tr:nth-child(even) {background-color: #eee;  border-top: 1px solid #fff; padding: 1px;}
+
+.table tr:hover{
+    background: #d0dafd; color: #339; border: 1px solid #fff;
+}
+
+.table tr td { font-size: 14px;
+               color: #333; 
+               padding: 1px;
+               height: 18px;
+               }
+.limited{
+        width: 100%; height: 100%; overflow: auto;           
+}
+
+.lbl1{
+    font-size: 10px;
+    color: #555555;
+}
+.lbl2{
+    font-size: 36px;
+    color: #777777;
+    font-style: italic;
+}
+.lbl3{
+    font-size: 24px;
+    color: #bbb;
+    font-style: italic;
+    
+}
+.lbl4{
+    font-size: 18px;
+    color: #999999;
+    
+}
+.lbl5{
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+    
+}
+.lbl6{
+    font-size: 12px;
+    color: #999999;
+        
+}
+
+.etiqueta{
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+    width: 100%;
+    
+}
+.tbl{
+    border: 1;
+    width: 90%;
+}
+    //-----
+#cssmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  height: 36px;
+  font-size: 12px;
+  
+  text-transform: lowercase;
+  background: transparent url(/img/bg.jpg) repeat-x top left;
+  font-family: "Trebuchet MS", Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  pading: 0;
+}
+#cssmenu li a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  
+  padding: 12px 20px 0 20px;
+  height: 24px;
+  border-bottom:3px solid;
+  background-color: #000000;
+  filter: alpha(opacity=40); 
+  opacity: .40;
+}
+#cssmenu li a:hover {
+  color: #fff;
+  background: url(/img/textura1.jpg) no-repeat; 
+  border-bottom:3px solid #7da315;
+  filter: alpha(opacity=80); 
+  opacity: .80;
+  //background: transparent url("/img/over.jpg") no-repeat;
+}
+
+.active{
+  //color: #fff;
+  background-color: #fff;
+  height: 36px;
+  border-bottom:3px solid #7da315;
+ // filter: alpha(opacity=90);   opacity: .90; 
+}
+//------------------------------------------------------------------------------
+#csssubmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  height: 36px;
+  font-size: 12px;
+  
+  text-transform: lowercase;
+  //background: transparent url(/img/bg.jpg) repeat-x top left;
+  //background-color: #FCC654;
+  font-family: "Trebuchet MS", Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #000000;
+}
+#csssubmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  pading: 0;
+}
+#csssubmenu li a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  
+  padding: 12px 20px 0 20px;
+  height: 24px;
+  border-bottom:3px solid;
+  background-color: #31708f;
+  //filter: alpha(opacity=40); 
+  //opacity: .40;
+}
+#csssubmenu li a:hover {
+  color: #fff;
+  background: url(/img/textura18.jpg) no-repeat; 
+  border-bottom:3px solid #31708f;
+  //filter: alpha(opacity=80); 
+  //opacity: .80;
+  //background: transparent url("/img/over.jpg") no-repeat;
+}
+//------------------------------------------------------------------------------
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.editor{
+	
+	position:relative;
+        width: 90%;
+        
+        background-color: #fff;
+        
+        z-index:10;
+	
+}
+.imagebutton {
+    display: inline;
+    padding: 1px;
+    cursor: pointer;
+    filter: alpha(opacity=50); 
+    opacity: .50;
+    
+}
+
+.image {
+   
+    height:100%;
+    width:27px; 
+}
+.imagebutton:hover{
+    
+     filter: alpha(opacity=95); 
+        opacity: .95;
+}
+
+.textiframe{
+   background-color: #fff; height: 370px; width: 90%;border: solid 1px #cccccc; 
+}
+
+.navigationEdit li:hover img{	
+   
+    background: -webkit-linear-gradient(#fff, #aaa);
+    background: -moz-linear-gradient(#fff, #aaa);
+    background: -o-linear-gradient(#fff, #aaa);
+    border-color:  #ccc; 
+    filter: alpha(opacity=50); 
+    opacity: .50;
+}
+
+
+
+
+.toolbar {height: 30;}
+
+.navigationEdit{
+    position: absolute; left: 5%; top: 12%; z-index: 10;
+}
+.navigationEdit li{
+        float: left;
+        list-style:none;
+	height:30px;
+	width:30px;
+}
+.navigationEdit span{
+        width:0px;
+	left:0px;
+	padding:2;
+	position:absolute;
+	overflow:hidden;
+	bottom: -10px;
+        
+	/* Text properties */
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	letter-spacing:1px;
+	white-space:nowrap;
+	line-height:10px;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+        
+}
+.navigationEdit a{
+	//background:url('/img/textura1.jpg');
+        //background-color: #ccc;
+        background: -webkit-linear-gradient(#eee, #ccc);
+        background: -moz-linear-gradient(#eee, #ccc);
+        background: -o-linear-gradient(#eee, #ccc);
+        filter: alpha(opacity=90); 
+        opacity: .90;
+        text-align: center;
+        height: 100%;
+        vertical-align: middle;
+	border: 1px solid #ddd;
+	display:block;
+	position:relative;
+}
+/* General hover */
+.navigationEdit a:hover span{ 
+            width:100%; 
+             
+            
+            overflow:visible; 
+            bottom: -10px; 
+            left: 0px;
+}
+.navigationEdit a:hover{
+	text-decoration:none;
+}
+
+.navigationEdit li {	background-position:0 0;}
+.navigationEdit li:hover a{	
+    //background-color: #FFF; 
+    background: -webkit-linear-gradient(#fff, #aaa);
+   background: -moz-linear-gradient(#fff, #aaa);
+   background: -o-linear-gradient(#fff, #aaa);
+    border-color:  #ccc; 
+filter: alpha(opacity=50); 
+    opacity: .50;}
+
+
+.navigationEdit li span{
+	//background-color:#cccc33;
+	color:#3d4f0c;
+        
+	
+        
+        
+}
+/* Blue Button */
+
+
+
+
+.navigationMenu{
+    position: absolute; left: 1%; top: 10%; z-index: 10; width: 20%;
+}
+.navigationMenu li{
+        float: left;
+        list-style:none;
+	height:3.5em;
+	padding:2px;
+	width:3.5em;
+}
+.navigationMenu span{
+	/* Container properties */
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+        bottom: 0;
+		
+	/* Text properties */
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight:bold;
+	letter-spacing:1px;
+	white-space:nowrap;
+	line-height:1em;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+.navigationMenu a{
+	//background:url('/img/textura28.jpg');
+        text-align: center;
+        
+        vertical-align: middle;
+	height:3.5em;
+	width:3.5em;
+	display:block;
+	position:relative;
+}
+.navigationMenu img{
+    width: 1.5em;
+    height: 1.5em;
+}
+/* General hover styles */
+.navigationMenu a:hover span{ width:100%; height: 20%; padding:0 0px;overflow:visible; bottom: 0px; left: 0px;}
+.navigationMenu a:hover{
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property */
+	/*-moz-box-shadow:0 0 5px #9ddff5;
+	-webkit-box-shadow:0 0 5px #9ddff5;
+	box-shadow:0 0 5px #9ddff5;*/
+}
+/* Green Button */
+.navigationMenu .home {	background-position:0 0;
+       //border-radius: 80px 0px 0px 0px;
+}
+.navigationMenu .home:hover {	background-position:0 -80px;}
+.navigationMenu .home span{
+	background-color:#7da315;
+	color:#3d4f0c;
+	//text-shadow:1px 1px 0 #99bf31;
+        
+        
+}
+/* Blue Button */
+.navigationMenu .about { background-position:-80px 0; 
+       // border-radius: 0px 80px 0px 0px;
+}
+.navigationMenu .about:hover { background-position:-80px -81px;}
+.navigationMenu .about span{
+	background-color:#1e8bb4;
+	color:#223a44;
+	//text-shadow:1px 1px 0 #44a8d0;
+        
+}
+/* Orange Button */
+.navigationMenu .services { background-position:-160px 0;
+           //border-radius: 0px 0px 80px 0px;
+}
+.navigationMenu .services:hover { background-position:-160px -81px;}
+.navigationMenu .services span{
+	background-color:#c86c1f;
+	color:#5a3517;
+	//text-shadow:1px 1px 0 #d28344;
+        
+}
+/* Yellow Button */
+.navigationMenu .portfolio { background-position:-240px 0;
+            //border-radius: 0px 0px 0px 0px;
+}
+.navigationMenu .portfolio:hover{ background-position:-240px -81px;}
+.navigationMenu .portfolio span{
+	background-color:#d0a525;
+	color:#604e18;
+	//text-shadow:1px 1px 0 #d8b54b;
+       
+}
+/* Purple Button */
+.navigationMenu .contact { background-position:-320px 0;
+          //border-radius: 0px 0px 80px 0px;
+}
+.navigationMenu .contact:hover { background-position:-320px -81px;}
+.navigationMenu .contact span{
+	background-color:#af1e83;
+	color:#460f35;
+	//text-shadow:1px 1px 0 #d244a6;
+       
+}
+/* The styles below are only needed for the demo page */
+.main{
+	margin:5em auto;
+	position:relative;
+	width:2.5em;
+}
+
+
+h1{
+	color:#fff;
+	font-size:30px;
+	font-weight:normal;
+	padding:60px 0 20px;
+	text-align:center;
+}
+
+h2{
+	font-weight:normal;
+	text-align:center;
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+a, a:visited,a:active {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+p.note{
+	color:#707070;
+	font-size:10px;
+	text-align:center;
+	margin:50px;
+}
+
+.form{  
+    padding: 20px 0px 0px 30px;   /* margen con valores: arriba - derecha - abajo - izquierda */ 
+    font-family:verdana,arial; 
+    //font-size:9pt; 
+}  
+
+.input {  
+    font-family:verdana,arial;     /* tipo de letra */  
+    width: 65%;                 /* anchura de campos de formulario */ 
+    margin: 5px;
+    padding: 5px;
+    font-size:12pt;                /* tamaño de la letra*/   
+    color:#008000;                 /* color del texto */   
+    border: 1px;        
+    background-color:#FFF;    /* color del fondo */   
+} 
+
+.select{
+    font-family:verdana,arial;     /* tipo de letra */  
+    width: 65%;                 /* anchura de campos de formulario */ 
+    margin: 5px;
+    padding: 5px;
+    font-size:12pt;                /* tamaño de la letra*/   
+    color:#008000;                 /* color del texto */   
+    border: 1px;        
+    background-color:#FFF;    /* color del fondo */   
+}
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+
+
+
+.alert-danger {
+    position:absolute;  top:1%;    left:1%;  height:5%; z-index:10; 
+    width:45%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #a94442;
+    border-radius: 4px;
+    color: #a94442;
+    background-color: #f2dede;
+}
+.alert-warning {
+    position:absolute;  top:1%;    left:1%;  height:5%; z-index:10; 
+    width:45%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #8a6d3b;
+    border-radius: 4px;
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+}
+.alert-success {
+    position:absolute;  top:1%;    left:1%;  height:5%; z-index:10; 
+  width:40%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #3c763d;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+.alert-info {
+    position:absolute;  top:1%;    left:1%;  height:5%; z-index:10; 
+  width:45%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #31708f;
+  border-radius: 4px;
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+//class para las tablas del sistema
+
+
+#tabla3{
+/*estilo de el cuerpo de nuestra tabla*/
+background-color: #1e8cbe;
+width:80%;
+margin:24px auto;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+font-family:helvetica,arial,sans-serif;
+font-weight:normal;
+text-transform: uppercase;
+}
+
+#tabla3 th{
+/*estilo de los elementos(th)*/
+background-color: #278dbc;
+color:#fff;
+font-weight: normal;
+font-size:14px;
+padding: 8px;
+}
+
+#tabla3 td{
+
+/*estilo a los elementos (td)*/
+width:100px;
+height: 24px;
+}
+
+//**Aqui esta la magia ahora vamos usar el  nth-child()**
+
+#tabla3 tr:nth-child(odd){
+
+/*para los colores de las filas impares*/
+background-color: #ffffff;
+}
+
+#tabla3 tr:nth-child(even){
+
+/*para los colores de las filas pares*/
+background:#EDEDED;
+}
+
+#mitabla{
+/*estilo de el cuerpo de nuestra tabla*/
+background-color: #1e8cbe;
+width:80%;
+margin:24px auto;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+font-family:helvetica,arial,sans-serif;
+font-weight:normal;
+text-transform: uppercase;
+}
+
+#mitabla th{
+/*estilo de los elementos(th)*/
+background-color: #278dbc;
+color:#fff;
+font-weight: normal;
+font-size:14px;
+padding: 8px;
+}
+
+#mitabla td{
+
+/*estilo a los elementos (td)*/
+width:100px;
+height: 24px;
+}
+
+/**Aqui esta la magia ahora vamos usar el  nth-child()**/
+
+#mitabla tr:nth-child(odd){
+
+/*para los colores de las filas impares*/
+background-color: #ffffff;
+}
+
+#mitabla tr:nth-child(even){
+
+/*para los colores de las filas pares*/
+background:#EDEDED;
+}
+.divmail{
+    height: 20%;
+    
+    overflow: auto;
+}
+.divmailver{
+    height: 45%;
+    
+    overflow: auto;
+}
+.iframemailindex{
+    height: 98%;
+    width: 100%;
+    border: 0px;
+    background-color: #fff;
+}
+
+  .formsearch {
+    margin: 0 auto;
+    padding: 15px;
+    width: 600px;
+  }
+ .formsearch input {
+    background-color: #fff;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    font-family: Tahoma;font-size:15px;
+    padding: 11px 5px;
+    width: 440px;
+  }
+  .formsearch input:focus {
+    outline: 0;font-weight: bold;
+    -moz-box-shadow:0 0 20px #9ddff5;
+    -webkit-box-shadow:0 0 20px #9ddff5;
+    box-shadow:0 0 20px #9ddff5;
+    //box-shadow: 0 0 12px rgba(0,0,0,.8) inset;
+  }
+ 
+ .formsearch button {
+    background-color: #31708f; 
+    border: none;
+    border-radius: 0 3px 3px 0;
+    color: #FFF;
+    cursor: pointer;
+    float: none;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    width: 110px;
+  }
+  .formsearch button:before{
+      border: solid 8px transparent;
+  
+  bottom: 22px;  /* igual al borde + el padding-bottom de la definición anterior */
+  content: "";
+  display: block;
+  height: 0px;
+  left: -8px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  
+  width: 0;
+  
+    border-color: transparent #31708f transparent;
+    border-style: solid solid solid none;
+    border-width: 8px 8px 8px 0;
+    
+    
+  }
+  .formulariodemo button:hover{ background: #278dbc; } 
+  .formulariodemo button:hover:before { border-right-color: #278dbc; }
+ /*
+  .searchindex{
+      border: 1px solid;
+  }
+  .searchindex input{
+      width: 80%;
+  }*/
+ 
+ .usermenu{
+     position: absolute;
+     border-top: 0.125em solid #fff;
+     top: 25%;
+     width: 13%;
+     left: 2%;
+     padding: 0.5em;
+     }
+ .usermenu img{
+     width: 3em;
+     height: 3em;
+     -moz-border-radius: 2.25em;
+    -webkit-border-radius: 2.25em;
+    -moz-box-shadow:0 0 0.25em #000;
+    -webkit-box-shadow:0 0 0.25em #000;
+    box-shadow:0 0 0.25em #000;
+    border-radius: 2.25em;
+    border: 0.25em solid #fff;
+    vertical-align: middle;
+     
+ }
+ .usermenu span{
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    font-size: 1em;
+    padding: 0.2em;
+    color: #fff;
+
+ }
+ .usermenu li{
+     left: 3.5em;
+     width: 70%;
+    margin: 0.1em;
+    list-style:none;
+    filter: alpha(opacity=55); 
+    opacity: .55;
+    cursor: pointer;
+    
+     background-color: #fff;
+ }
+ .usermenu li:hover{
+     
+    filter: alpha(opacity=95); 
+    opacity: .95;
+    
+    
+     
+ }
+ .usermenu li a{
+     
+    font-size: 0.8em;
+    font-family: Arial;
+    color:#000;
+    padding: 0.125em;
+    text-decoration:none;   
+ }
+ .empresa{
+     //position: absolute;
+     //float: left;
+     width: 48%;
+     font-family: sans-serif;
+     font-size: 0.8em;
+     color: #555;
+     
+ }
+ .empresa span{
+     //position: relative;
+     
+    
+    //float: left;
+    
+    filter: alpha(opacity=55); 
+    opacity: .55;
+    cursor: pointer;
+    border-radius: 5px 0 5px 0px;
+    background: url(/img/textura09.jpg) no-repeat;
+    font-size: 0.8em; 
+    color: #fff;
+    padding: 0.3em;
+    margin: 0.1em;
+    border: solid 1px #7595C6;
+    list-style:none;
+ }
+ .empresa label{
+    font-size: 1.2em; 
+    color: blue;
+    
+    margin: 2px;
+    
+ }
+ .empresa span:hover{
+    filter: alpha(opacity=95); 
+    opacity: .95;
+    }
+  .empresa hr{
+     color: #fff;
+     line-break: normal;
+ }
+ .empresa img{
+   
+    filter: alpha(opacity=45); 
+    opacity: .45;
+    cursor: pointer;
+ }
+ .empresa img:hover{
+    filter: alpha(opacity=95); 
+    opacity: .95;
+    
+ }
+ .empresa a img{
+   
+    filter: alpha(opacity=95); 
+    opacity: .95;
+    cursor: pointer;
+ }
+    
+/* 
+ 
+.globrub {
+    margin: 0 auto;
+    padding: 5px;
+    
+    font-size: 0,8em;
+    
+    border: none;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    font-family: Tahoma;font-size:15px;
+    padding: 3px 2px;
+    width: 100%;
+  }
+ 
+ .globrub label {
+    position: absolute;
+    width: 60%;
+  }
+ .globrub span {
+    background-color: #31708f; 
+    font-size: 12px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    color: #FFF;
+    cursor: pointer;
+    float: none;
+    font-family: Tahoma;
+    left: 60%;
+    
+    
+    overflow: visible;
+    padding: 1px;
+    position: absolute;
+    
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    width: 40%;
+  }
+  .globrub span:hover {
+    background-color: #96cdcd; 
+    font-size: 12px;
+    color: #777;
+    border-color: #31708f; ;
+    text-shadow: 0 -1px 0 #000;
+    width: 40%;
+  }*/
+  
+.globrub span:before{
+    border: solid 8px transparent;
+    bottom: 20px;  /* igual al borde + el padding-bottom de la definición anterior */
+    content: "";
+    display: block;
+    height: 0px;
+    left: -8px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 2px;
+    width: 0;
+    border-color: transparent #31708f transparent;
+    border-style: solid solid solid none;
+    border-width: 8px 8px 8px 0;
+    
+    
+  }
+  

@@ -1,0 +1,38 @@
+﻿;Configuracón global.
+[127.0.0.1]
+;Host.
+database.params.host     = 127.0.0.1
+;Usuario.
+database.params.username = root
+;Password.
+database.params.password =  
+;Nombre de la base de datos.
+database.params.dbname   = guidi
+;Puerto de la base de datos.
+database.params.port	 = 3306
+;Ubicación del archivo de lenguaje.
+language.path		 = C:\xampp\htdocs\www.guiadigital.com.uy\application\language\
+;Tipo de archivo de lenguaje.
+language.adapter	 = tmx
+;Directorio donde se suben la imágenes.
+image.uploads.path	 = uploads/
+;Directorio donde se suben las imágenes miniatura.
+image.uploads.mini	 = uploads/mini/
+;Tamaño de las imágenes miniatura.
+image.square		 = 45
+;Cantidad de registro a mostrar.
+pagination.rows		 = 6
+;
+;
+;Configuración en modo TESTING
+[testing:local]
+;Password.
+;database.params.password = 
+;Puerto de la base de datos.
+;database.params.port	 = 3308
+;Ubicacion del archivo de lenguaje.
+;language.path            = "C:/Program Files/xampp/htdocs/www.ticketeb.com.uy/application/language/"
+;
+;
+;Configuraciòn en modo PRODUCTION.
+[production:local]

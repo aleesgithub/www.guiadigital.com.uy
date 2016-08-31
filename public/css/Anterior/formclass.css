@@ -1,0 +1,112 @@
+/*#form{
+ width: 470px;
+ padding: 0 5px;
+ margin: 0 auto;
+}
+body{
+ font-family: "Open Sans", Arial, sans-serif;
+ font-size: 14px;
+ font-weight: 350;
+ color: #333;
+}
+input{
+ width: 98%;
+ height: 40px;
+ font: 300 24px "Open Sans", Arial, sans-serif;
+ margin: 5px 0 10px 0;
+}
+input[type=submit]{
+ background-color:#FF9900;
+ height:50px;
+ width:98%;
+ //border:none;
+ font-weight:400;
+ letter-spacing:2px;
+ color:#FFFFFF;
+}
+h2{
+ font-size: 80px;
+ color: #FF9900;
+ text-shadow: 2px 2px #222;
+ font-family: "Open Sans";
+ border-bottom: 2px solid #FFF;
+ text-align: center;
+ margin: 0 0 5px 0;
+}
+#form{
+ width: 470px;
+ height: auto;
+ //backgroud-image: url(aquí la ruta de la imagen de fondo);
+ margin: 0 auto;
+ padding: 0 1%;
+ box-shadow: 5px 5px 0 #AAA;
+ border-radius: 5px;
+}
+
+
+*/
+.divform{
+    width: 50%;
+    height: 50%;
+}
+
+#crearEmpresa label{
+    font-size: 1em;
+    color: #aaa;
+    
+}
+#crearEmpresa input {
+    width: 90%;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 5px 5px 0 #ddd;
+     border-radius: 5px;
+}
+#crearEmpresa input:hover{
+    background-color: #E2EFFC;
+}
+#crearEmpresa input:focus{
+    background-color: #a4d3ee;
+}
+#crearEmpresa select{
+    width: 90%;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 5px 5px 0 #ddd;
+     border-radius: 5px;
+}
+#crearEmpresa select:hover{
+    background-color: #E2EFFC;
+}
+#crearEmpresa select:focus{
+    background-color: #a4d3ee;
+}
+#crearEmpresa textarea{
+    width: 90%;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 5px 5px 0 #ddd;
+    border-radius: 5px;
+}
+#crearEmpresa textarea:hover{
+    background-color: #E2EFFC;
+}
+#crearEmpresa textarea:focus{
+    background-color: #a4d3ee;
+}
+#crearEmpresa table{
+   width: 90%;
+}
+#crearEmpresa .btn{
+   background: url(/img/textura1.jpg); 
+   border: 1px solid #fff;
+   box-shadow: 3px 3px 5px #555;
+   border-radius: 5px 5px 5px 5px;
+   color: #fff;
+   font-size: 16px;
+   font-family: sans-serif;
+   padding: 2px;
+   width: 20%;
+   cursor: pointer;
+}
+

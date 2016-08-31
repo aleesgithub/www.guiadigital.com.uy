@@ -1,0 +1,1 @@
+<small>Todos los derechos reservados, Gu&iacute;a Digital&reg; (2007)</small>
