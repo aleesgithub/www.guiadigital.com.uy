@@ -1,4 +1,4 @@
-<!-- Primera modificacion de prueba desde pc de ale-->
+<!-- Primera modificacion de prueba desde pc de ale vghdfchncfncf-->
 <!-- Cabezal -->
 {include file = 'frontend/layout/head.tpl'}
 
