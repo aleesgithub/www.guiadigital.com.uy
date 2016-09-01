@@ -1,4 +1,4 @@
-<!-- Cabezal desde repositorio-->
+<!-- Cabezal-->
 {include file = 'frontend/layout/head.tpl'}
 
 <body>
