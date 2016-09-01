@@ -1,5 +1,6 @@
 <!-- Primera modificacion de prueba desde pc de ale vghdfchncfncf-->
 <!-- Cabezal -->
+<!-- Cabezal -->
 {include file = 'frontend/layout/head.tpl'}
 
 <body>
