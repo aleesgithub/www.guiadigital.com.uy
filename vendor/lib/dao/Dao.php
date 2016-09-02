@@ -98,7 +98,8 @@ class Dao extends Lib{
 		//Representa resultado obtenido de acceder a base de datos.
 		
                 $Dar = $this->DataAccess->retrieve($sql,$binds);	
-		return $Dar->fetchAll();
+                
+                return $Dar->fetchAll();
 	}
 	
 	public function load(\lib\model\Model $M, \lib\dao\query\Query $Q){

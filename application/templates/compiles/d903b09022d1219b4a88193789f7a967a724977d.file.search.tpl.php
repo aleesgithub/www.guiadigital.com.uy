@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2015-09-01 21:56:03
+<?php /* Smarty version Smarty-3.1.18, created on 2016-08-30 20:20:51
          compiled from "C:\xampp\htdocs\www.guiadigital.com.uy\application\templates\frontend\layout\search.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1366555e5fe7912ea10-00012730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:402657c5ce83c5f2d5-17525491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1366555e5fe7912ea10-00012730',
+  'nocache_hash' => '402657c5ce83c5f2d5-17525491',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_55e5fe79149800_88532636',
   'variables' => 
   array (
     'nomparam' => 0,
@@ -25,8 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'Tr' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_57c5ce83c66ef1_49144225',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e5fe79149800_88532636')) {function content_55e5fe79149800_88532636($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_capitalize')) include 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\vendor\\smarty\\libs\\plugins\\modifier.capitalize.php';
+<?php if ($_valid && !is_callable('content_57c5ce83c66ef1_49144225')) {function content_57c5ce83c66ef1_49144225($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_capitalize')) include 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\vendor\\smarty\\libs\\plugins\\modifier.capitalize.php';
 ?>
             
 <div class="searchindex">

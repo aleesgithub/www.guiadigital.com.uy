@@ -15,21 +15,16 @@ class Query{
         public $Model2		= null;
         public $Model3		= null;
 	public $binds		= array();
-	public $campo           = ' * ';
+	public $campo           = null;
 	public function add(QueryAbstract $Statement){
 		$this->statements[] = $Statement;
 	}
 	
-	public function __construct(\lib\model\Model $M,\lib\model\Model $M2=null,\lib\model\Model $M3=null){
+	public function __construct(\lib\model\Model $M,\lib\model\Model $M2=null,\lib\model\Model $M3=null, $campo='*'){
 		$this->Model    = $M;
                 $this->Model2   = $M2;
                 $this->Model3   = $M3;
-//                if(!is_null($this->Model2)){
-//                    $table1 = Dao::getTable($this->Model);
-//                    $table2 = Dao::getTable($this->Model2);
-//                    
-//                }
-                
+                $this->campo    = $campo;//Los campos que quiero traer
 	}
 	
 	public function prepare(){		
@@ -40,7 +35,7 @@ class Query{
                 $this->groupby          = null;
                 $this->in               = null;
 		$this->query		= null;
-                $this->matchagainst     =null;
+                $this->matchagainst     = null;
 		//$this->campo            =' * ';
                 
                 
@@ -85,6 +80,7 @@ class Query{
 		if(is_object($this->matchagainst)){
                     
                     $this->matchagainst->prepare($this);
+                    $this->campo.=$this->matchagainst->campo;
                     
 		}
 		if(is_object($this->in)){

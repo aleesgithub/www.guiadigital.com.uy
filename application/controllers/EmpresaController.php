@@ -69,7 +69,8 @@ class EmpresaController extends Controller{
                     die($e->getMessage());
             }	
 	}
-	public function crear(){
+	
+        public function crear(){
             try{
                 $do_submit = $this->getParam('do_submit');
                 $this->View->assign('css', 'formclass'); 
@@ -121,7 +122,8 @@ class EmpresaController extends Controller{
 
             	
 	}
-	public function eliminar(){
+	
+        public function eliminar(){
             $id = $this->getParam('id');				
             if(empty($id)){
                 header("location:/empresa/index/");
@@ -136,7 +138,10 @@ class EmpresaController extends Controller{
                 exit();
             }else{
                 if($Auth->getIdentity()->usr==$this->Model->usuario){
-                    $this->Model->delete();
+                    $this->Model->estado='Suspendida';
+                    //No elimino el registro, simplemente lo dejo en estado Suspendido.
+                    //$this->Model->delete();
+                    $this->Model->update();
                     $this->_helper->flashMessenger->addMessage('success');
                     $this->_helper->flashMessenger->addMessage($Auth->getIdentity()->nombre.', el registro fue eliminado correctamente ');
                 }else{
@@ -144,12 +149,15 @@ class EmpresaController extends Controller{
                     $this->_helper->flashMessenger->addMessage($Auth->getIdentity()->nombre.': Ocurrio un error, no tienes permiso para eliminar el proyecto del usuario  '.$this->Model->usuario);
                 }
             }
-            header("location:/empresa/index/?estado=Pendiente");
+            header("location:/empresa/index/");
             exit();
         }
+        
         public function actualizar(){
+            
             try{
                 $id=$this->getParam('id');
+                
                 $this->View->assign('css', 'formclass'); 
                 $do_submit  = $this->getParam('do_submit');
                 $Empresa   = Factory::create(FactoryModel::getInstance(), 'Empresa');
@@ -172,7 +180,7 @@ class EmpresaController extends Controller{
                 }
                 if($do_submit){
                     $this->params2Model($this->Model);
-                    //$this->required($this->Model, array('nombre','usuario'));
+                    $this->required($this->Model, array('nombre','email','direccion'));
                     $validator=new Validator();
                     $validator->validoModel($this->Model);
                     
@@ -193,8 +201,12 @@ class EmpresaController extends Controller{
                         $this->_helper->flashMessenger->addMessage($Auth->getIdentity()->nombre.': Ocurrio un error, no tienes permiso para modificar informaci&oacute;n de la empresa  '.$this->Model->nombre);
                     }
                 }
+                //$Q->prepare();
                 $result=$this->Model->fetch($Q);
+                
+                
                 $rubros=$this->Model->obtenerRubros($result);
+                
                 $this->View->assign('rubros', $rubros);
                 $enlaces=$this->Model->obtenerEnlaces($result);
                 $this->View->assign('enlaces', $enlaces);
@@ -215,46 +227,51 @@ class EmpresaController extends Controller{
             
             $this->View->display();	
 	}
+        
         public function listar(){
             try{
-                $this->getMessages();
-                //Defino la vista en frontend
+//$this->getMessages();
+//Defino la vista en frontend
                 $this->View->layout = 'frontend'; 
                 $search     = $this->getParam('search');
                 $advanced   = $this->getParam('advanced');
-                $tipo       = $this->getParam('tipo');
-                $estado     = $this->getParam('estado');
-                //controlo si la llamada es de jquery;
-                if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
-                     $this->View->assign('jquery', TRUE); 
+                $tipo       = $this->getParam('tipo');//desuso
+                $Auth = \Zend_Auth::getInstance();
+                $a=$Auth->getIdentity();
+                if($a->role='ADM'){
+                    $estado     = $this->getParam('estado');
                 }
+//Condiciono a que el estado sea Vigente en caso de no pasarse por parámetro
+                if(!$estado){
+                    $estado='Vigente';
+                }                
                 
-                $Rubro          =   Factory::create(FactoryModel::getInstance(), 'Rubro');
-                $existsRub      =   $Rubro->existsRubro($search);
-                $Empresarubro   =   Factory::create(FactoryModel::getInstance(), 'Empresarubro');
-                //Instancio la Query del modelo
-                $Q      = new Query($this->Model,$Empresarubro,$Rubro);
-                
-
 //Controlo que el tamaño del parametro a buscar sea mayor que dos caracteres.
                 if(strlen ($search)<3){
-                    
                     $this->_helper->flashMessenger->addMessage('warning');
                     $this->_helper->flashMessenger->addMessage('Ingresa un m&iacute;nimo de 3 caracteres');
                     $this->_redirect('index', array('exit'=>false));
                     return;
                 }
-                if(!$estado){
-                    $estado='Vigente';
+//controlo si la llamada es de jquery;
+                if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+                     $this->View->assign('jquery', TRUE); 
                 }
-                //Limito la busqueda a empresas vigentes.
+//Defino el modelo Rubro y Empresarubro.               
+                $Rubro          =   Factory::create(FactoryModel::getInstance(), 'Rubro');
+                $Empresarubro   =   Factory::create(FactoryModel::getInstance(), 'Empresarubro');
+//Identifico si en el buscador se especifico algun rubro ej. Farmacia 
+//$existRub retorna un String con los rubros encontrados Ej.: "Farmacia, Cosmética"                
+                $existsRub      =   $Rubro->existsRubro($search);
+                
+                
+//Instancio la Query del modelo para generar sql con join a tres tablas;
+                $Q              = new Query($this->Model,$Empresarubro,$Rubro,'DISTINCT empresa.id, nombre,descripcion,direccion,localidad,departamento,empresa.estado ');
+//Limito la busqueda a empresas con estado específico.
                 $Q->add(new QueryAnd('estado',$estado));
-                
-//Verifico si la busqueda contiene el nombre de un rubro. 
-                
-                
-//Si $advance es true o existe un rubro en el parametro de busqueda, se realiza busqueda en las tablas de rubro y empresarubro
-                
+//Si $advance es true o sea que se solicitan todas las empresas de un rubro
+// o existe un rubro en el parametro de busqueda, se realiza busqueda en las tablas de rubro y empresarubro
+// con el fin de obtener result con los id de empresa de esos rubros                
                 if($advanced || $existsRub!=null){
                     $Q2     = new Query($Rubro,$Empresarubro);
                     $valor="'".$existsRub."'";
@@ -262,24 +279,29 @@ class EmpresaController extends Controller{
                     $fulltext="rubro,subrubro";
                     $Q2->add(new QueryMatchAgainst($fulltext,$existsRub));
                     $Q2->prepare();
+                    
                 }
-                $existsLoc=$this->Model->existsLoc($search);
-                $Q->add(new QueryAnd('localidad',$existsLoc));
-                $fulltext2="nombre,descripcion,direccion,localidad,departamento";
-                $Q->add(new QueryMatchAgainst($fulltext2,$search));
+//Identifico si en el buscador se especifico alguna localidad  ej. La Paloma 
+//$existsLoc retorna un String con las localidades encontrados Ej.: "La Paloma, Rocha"                      
+                $existsLoc  =$this->Model->existsLoc($search);
+                
+                if($existsLoc)$Q->add(new QueryAnd('localidad',$existsLoc));
+                $fulltext2  ="nombre,descripcion,direccion,localidad,departamento";
+                $Q->add(new QueryMatchAgainst($fulltext2,$search,null,1));
                 $Q->add(new QueryIn('id',$Q2->query,'','OR'));
-                $order=array('subrubro','localidad');
                 
+                $order      =array('Rel desc','subrubro','localidad');
                 $Q->add(new QueryOrder('','',$order));
-                
-                $P = new QueryLimit($this->getPage(),(int)$this->Config->pagination->rows);
+                $P          = new QueryLimit($this->getPage(),(int)$this->Config->pagination->rows);
                 $Q->add($P);
-                //$Q->prepare($this->Model);
+                
+                //$Q->prepare();
+                //echo "<br>".$Q->query;die;
                 
                 $result=$this->Model->fetch($Q);
                 
-                //asigno resultados al modelo
                 $this->View->assign('estado', $estado);
+                
                 $this->View->assign('rows',$result);
                 $this->View->assign('P', $P);
                 $this->View->assign('search', $search);
@@ -292,6 +314,7 @@ class EmpresaController extends Controller{
                 $this->View->assign('titulo', "Listado de ");
                 $this->View->assign('subtitulo', "Empresas");
                 $rubros=$this->Model->obtenerRubros($result);
+                
                 $this->View->assign('rubros', $rubros);
                 $enlaces=$this->Model->obtenerEnlaces($result);
                 $this->View->assign('enlaces', $enlaces);

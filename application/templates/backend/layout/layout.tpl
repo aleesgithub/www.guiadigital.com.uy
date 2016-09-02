@@ -1,23 +1,24 @@
-<!-- Cabezal -->
-{include file = 'frontend/layout/head.tpl'}
+{if $jquery==false} {include file = 'backend/layout/header.tpl'}
+    <div id="contenido" class="content">
+{/if}
 
-<body>
+    {include file = "backend/$content"}
 
-    <div class="container-fluid well" id="container-body">
-        <div class="row">
+{if $jquery==false} </div>
     
-            <!-- Menú -->
-            {include file = 'frontend/layout/menu.tpl'}
+    {include file = 'backend/layout/footer.tpl'}
+    {include file = "backend/layout/titles.tpl"}
+    {*include file = "backend/layout/tool.tpl"*}
+<div class="backend_cuerpo"></div>
+<div id="flotante">
 
-            <!-- Contenido -->
-            {include file = "backend/$content"}
+</div>
+<div id="usermenu" class="usermenu">{include file = "backend/layout/usermenu.tpl"}</div>
+<div id="reloj" class="reloj"></div>
+<div id="fecha" class="fecha"></div>
+<div  class="logo"><span><label id="gui">Gu&iacute;as<label id="di">&nbsp;Digital</span></div>
 
-            <!-- Footer -->
-            {include file = 'frontend/layout/footer.tpl'}
-
-            <!-- Librerías -->
-            {include file = 'frontend/layout/librerias.tpl'}
-            
-        </div>
-    </div>
 </body>
+
+</html>{/if}
+

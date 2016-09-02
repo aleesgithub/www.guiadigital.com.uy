@@ -1,78 +1,75 @@
-<div class="container-fluid well" id="container-tabla">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
-            <h2 class="text-center">Editar usuario ({$model.usr})</h2>
-        </div>
-        <form action="/user/actualizar/id/{$id}/" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="do_submit" value="1" />
-        <input type="hidden" name="language" value="es" />
-        <!-- Imagen -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group text-center">
-                <img src="/uploads/mini/{$model.imagen}" class="img-rounded" id="imagen-usuario-nuevo">
-                <input type="file" class="form-control btn btn-lg btn-link" name="imagen" id="imagen" value="{$model.imagen}">
-            </div>
-        </div>
-        <!-- Usuario -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <div class="input-group ">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control ancho-fijo" name="usr" required autofocus id="usr" value="{$model.usr}">
-                </div>
-            </div>
-        </div>
-        <!-- Password -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    <input type="password" class="form-control ancho-fijo" name="pwd" required id="pwd" value="{$model.pwd|substr:0:0}">
-                </div>
-            </div>
-        </div>
-        <!-- Selección del rol -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <select class="form-control ancho-fijo" name=role><option>Seleccione el rol</option>{html_options options=$roles selected=$role}</select>
-            </div>
-        </div>
-        <!-- Nombres -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon-pencil"></span></span>
-                    <input type="text" class="form-control ancho-fijo" name="nombre" required id="nombre" value="{$model.nombre}">
-                </div>
-            </div>
-        </div>
-        <!-- Apellidos -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon-pencil"></span></span>
-                    <input type="text" class="form-control ancho-fijo" name="apellido" required id="apellido" value="{$model.apellido}">
-                </div>
-            </div>
-        </div>
-        <!-- Email -->
-        <div class="col-lg-4 col-lg-offset-4">
-            <div class=" form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                    <input type="email" class="form-control ancho-fijo" name="email" required id="email" value="{$model.email}">
-                </div>
-            </div>
-        </div>
-        <!-- Botones -->
-        <div class="col-lg-4 col-lg-offset-4 text-center">
-            <div class=" form-group">
-                <div>
-                    <button class="btn btn-success btn-lg" type="submit" id="boton-guardar-cancelar" href="#" data-toggle="modal" data-targer="#Ventana"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar </button>
-                    <button class="btn btn-danger btn-lg" type="button" id="boton-guardar-cancelar" onclick="location.href='/user/index/'" ><span class="glyphicon glyphicon-remove-circle"></span> Cancelar </button>
-                </div>
-            </div>
-        </div>
-        </form>
-    </div>
-</div>
+<h3>{$Tr->_("editar_usuario")} ({$model.usr}) <a href="/uploads/{$row.imagen}" target="_blank"><img src="/uploads/mini/{$model.imagen}"/></a></h3>
+
+<form action="/user/actualizar/id/{$id}/" method="post" enctype="multipart/form-data">
+<input type="hidden" name="do_submit" value="1" />
+
+<table class="table">
+  <tr>
+    <td  width="10%">  
+        <strong>{$Tr->_("nombre")} (*)</strong>
+        
+    </td>
+    <td width="40%">   
+        <input class="text" name="nombre" type="text" id="nombre" value="{$model.nombre}" />
+    </td>
+    <td width="10%">
+        <strong>{$Tr->_("password")} (*)</strong>
+         
+    </td>
+    <td width="40%">
+        
+        <input class="text" name="pwd" type="password" id="pwd" value="{$model.pwd|substr:0:0}" />    
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <strong>{$Tr->_("apellido")} (*)</strong>
+        
+    </td>
+    <td>
+        
+        <input class="text" name="apellido" type="text" id="apellido" value="{$model.apellido}" />
+    </td> 
+    <td>  
+        <strong>{$Tr->_("rol")} (*)</strong>
+        {if $user_data->role=='ADM'}
+        </td> 
+        <td>    
+        <select class="text" name=role>{html_options options=$role_options selected=$role}</select>
+        {else}
+        </td> 
+        <td> 
+            <label class="text">{$role}</label>    
+            <input class="text" name="role" type="hidden" id="role" value="{$role}" />    
+        {/if}
+    </td>    
+  </tr>
+  <tr>
+    <td>
+        <strong>{$Tr->_("mail")} (*)</strong>
+    </td>
+    <td>
+        <input class="text" name="email" type="text" id="email" value="{$model.email}" />
+    </td>
+    <td>
+        <strong>{$Tr->_("idioma")} (*)</strong>
+    </td>
+    <td>
+        <select class="text" name=language>{html_options options=$language_options selected=$language}</select>
+    </td>
+  </tr>  
+  <tr>
+    <td colspan="2" align="right"><strong>{$Tr->_("cambiar_imagen")}</strong>
+    </td>
+    <td colspan="2">
+        <label for="imagen"></label><input class="btn" type="file" name="imagen" id="imagen" />
+    </td>
+  </tr>  
+  <tr>
+    <td align="center" colspan="3"><input class="btn" type="submit" name="button" id="button" value="{$Tr->_("guardar")|capitalize}" /></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="3"><strong>{$Tr->_("campos_obligatorios")}</strong></td>
+  </tr>
+</table>
+</form>

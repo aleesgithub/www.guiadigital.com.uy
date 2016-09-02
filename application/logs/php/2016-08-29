@@ -1,2 +1,0 @@
-[29-Aug-2016 09:31:01 America/Montevideo] PHP Fatal error:  Class 'lib\image\Exception' not found in C:\xampp\htdocs\www.guiadigital.com.uy\vendor\lib\image\SimpleImage.php on line 27
-[29-Aug-2016 16:30:25 America/Montevideo] PHP Fatal error:  Class 'lib\image\Exception' not found in C:\xampp\htdocs\www.guiadigital.com.uy\vendor\lib\image\SimpleImage.php on line 27

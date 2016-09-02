@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-08-09 22:41:36
+<?php /* Smarty version Smarty-3.1.18, created on 2016-09-01 17:00:49
          compiled from "C:\xampp\htdocs\www.guiadigital.com.uy\application\templates\frontend\empresa\listar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1658455e5fe790c2920-92952044%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:637357c5ce83c228f3-47554796%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '85b4bf0cd379438984ef213fd3d87144a2cdba9d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\application\\templates\\frontend\\empresa\\listar.tpl',
-      1 => 1470775294,
+      1 => 1472741958,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1658455e5fe790c2920-92952044',
+  'nocache_hash' => '637357c5ce83c228f3-47554796',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_55e5fe79114643_07229987',
+  'unifunc' => 'content_57c5ce83c4ea18_49936309',
   'variables' => 
   array (
     'rows' => 0,
@@ -32,7 +32,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e5fe79114643_07229987')) {function content_55e5fe79114643_07229987($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('frontend/layout/search.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_57c5ce83c4ea18_49936309')) {function content_57c5ce83c4ea18_49936309($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('frontend/layout/search.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
                       
 <input type="hidden" value="" name="gmap_lng11" id="gmap_lng11">
@@ -50,10 +50,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value) {
 $_smarty_tpl->tpl_vars['row']->_loop = true;
 ?>
-        <?php if ($_smarty_tpl->tpl_vars['row']->value['estado']=='Vigente') {?>
+    <?php if ($_smarty_tpl->tpl_vars['row']->value['estado']=='Vigente') {?>
     <table width='100%'>
         <tr>
-            <td width='75%'><label><?php echo $_smarty_tpl->tpl_vars['row']->value['nombre'];?>
+            <td width='75%'><?php echo $_smarty_tpl->tpl_vars['row']->value['empresaId'];?>
+<label><?php echo $_smarty_tpl->tpl_vars['row']->value['nombre'];?>
 </label></td>
             <td><?php  $_smarty_tpl->tpl_vars['enlace'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['enlace']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['enlaces']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -119,7 +120,7 @@ $_smarty_tpl->tpl_vars['rubro']->_loop = true;
 foreach ($_from as $_smarty_tpl->tpl_vars['key']->key => $_smarty_tpl->tpl_vars['key']->value) {
 $_smarty_tpl->tpl_vars['key']->_loop = true;
 ?>
-                        <?php if ($_smarty_tpl->tpl_vars['key']->value['empresaId']==$_smarty_tpl->tpl_vars['row']->value['empresaId']) {?>
+                        <?php if ($_smarty_tpl->tpl_vars['key']->value['empresaId']==$_smarty_tpl->tpl_vars['row']->value['id']) {?>
                             <span onclick="location.href='/empresa/listar/?search=<?php echo $_smarty_tpl->tpl_vars['key']->value['subrubro'];?>
 &advanced=true'" id='<?php echo $_smarty_tpl->tpl_vars['key']->value['rubroId'];?>
 '><?php echo $_smarty_tpl->tpl_vars['key']->value['subrubro'];?>
@@ -133,25 +134,11 @@ $_smarty_tpl->tpl_vars['key']->_loop = true;
             <td colspan="2"></td>
         </tr>
     </table>
-    
-        
-            
-            
-           
-        
-            
-            
-            
-               
-            
-            <hr>
-        <?php }?>
+    <?php }?>
     <?php } ?>        
 <div class="backend_paginar"><?php echo $_smarty_tpl->getSubTemplate ('frontend/layout/pagination.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 </div>
 </div>
-  
-
 <input type="hidden" name="direcciones" id="direcciones" value="<?php echo $_smarty_tpl->tpl_vars['direcciones']->value;?>
 ">  
 <script type="text/javascript">initialize();</script><?php }} ?>

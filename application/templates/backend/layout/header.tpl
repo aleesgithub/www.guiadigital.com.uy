@@ -1,50 +1,17 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-08-30 21:47:50
-         compiled from "C:\xampp\htdocs\www.guiadigital.com.uy\application\templates\backend\layout\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2130557c5ce83f2e115-50992412%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    'f440e8e96360577d27028d1226c7abc329904902' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\application\\templates\\backend\\layout\\header.tpl',
-      1 => 1472585864,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '2130557c5ce83f2e115-50992412',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_57c5ce83f3b4e2_25230353',
-  'variables' => 
-  array (
-    'Tr' => 0,
-    'css' => 0,
-    'js' => 0,
-    'user_data' => 0,
-    'mailrec' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57c5ce83f3b4e2_25230353')) {function content_57c5ce83f3b4e2_25230353($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_capitalize')) include 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\vendor\\smarty\\libs\\plugins\\modifier.capitalize.php';
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<title><?php echo smarty_modifier_capitalize($_smarty_tpl->tpl_vars['Tr']->value->_("nombre_aplicacion"));?>
-</title>
+<title>{$Tr->_("nombre_aplicacion")|capitalize}</title>
 <link rel="stylesheet" type="text/css" href="/css/backend.css" />
-<link rel="stylesheet" type="text/css" href="/css/<?php echo $_smarty_tpl->tpl_vars['css']->value;?>
-.css" />
+<link rel="stylesheet" type="text/css" href="/css/{$css}.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <script type='text/javascript' src='/js/jquery-1.4.2.min.js'></script>
 <script src="/js/unicode-letter.js"></script>
 <script src="/js/es.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=3&amp;sensor=false&amp;key=AIzaSyDWD08m2rubm2lSiEdfQb0szx806bLVhX8" type="text/javascript"></script>  
 <script src="/js/functions.js"></script>
-<script src="/js/<?php echo $_smarty_tpl->tpl_vars['js']->value;?>
-.js"></script>
+<script src="/js/{$js}.js"></script>
 <link rel="stylesheet" href="/js/jquery-ui-1.11.1.custom/jquery-ui.css">
 <script src="/js/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
 <link rel="stylesheet" href="/js/jquery-ui-1.11.1.custom/style.css">
@@ -60,8 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
 <div id='msg' class='msg'>
 
-<?php echo $_smarty_tpl->getSubTemplate ('backend/layout/messages.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
-
+{include file = 'backend/layout/messages.tpl'}
 </div>
 
 
@@ -81,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <span>User</span>
         </a>
     </li>
-    <?php if ($_smarty_tpl->tpl_vars['user_data']->value->role=='ADM') {?>
+    {if $user_data->role=='ADM'}
     <!--
     <li>
 	     <a class="services"><br><img src="/img/reporte.png" >
@@ -98,11 +64,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <li>
     	<a class="contact"><br><img src="/img/mail.png" onclick="location.href='/mail/'">
                     <span>Contacto</span>
-                    <div id="notify" class="notify" style="display: none"><?php echo $_smarty_tpl->tpl_vars['mailrec']->value;?>
-</div>
+                    <div id="notify" class="notify" style="display: none">{$mailrec}</div>
         </a>
     </li>
-        <?php }?>
+        {/if}
 </ul>
     
 </div>
@@ -112,4 +77,3 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 
-<?php }} ?>

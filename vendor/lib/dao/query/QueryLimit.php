@@ -7,7 +7,7 @@ use lib\dao\Dao;
 class QueryLimit extends QueryAbstract{
 
 	public $total  	= null;
-	public $numRows   	= null;
+	public $numRows = null;
 	public $start  	= null;
 
 	function __construct($start, $num_rows) {
@@ -37,14 +37,13 @@ class QueryLimit extends QueryAbstract{
 	public function prepare(\lib\dao\query\Query $Q, $pos = 0){
 		$Da   = DataAccess::getInstance(); 
                 $table=Dao::getTable($Q->Model);
-                 if(!is_null($Q->Model2)){
+                if(!is_null($Q->Model2)){
                     $table2 = Dao::getTable($Q->Model2);
-                    
                     $sql = "SELECT COUNT(*) as total  FROM $table  Left Join $table2 ON $table.id=$table2.".$table."Id ";
                     if(!is_null($Q->Model3)){
                         $table3 = Dao::getTable($Q->Model3);
 
-                        $sql = $sql." LEFT JOIN $table3 ON $table2.$table3"."Id=$table3.id ".$this->query;
+                        $sql = $sql." LEFT JOIN $table3 ON $table2.$table3"."Id=$table3.id ".$Q->query;
                         
                     }else{
                         $sql = $sql.$Q->query;
@@ -53,7 +52,19 @@ class QueryLimit extends QueryAbstract{
                     $sql = "SELECT COUNT(*) as total  FROM $table  ".$Q->query;
                 }
                 
-                
+                //$mystring = 'abc';
+                $encontrar   = 'Order By';
+                $pos = strpos($sql, $encontrar);
+//echo $pos;
+// Nótese el uso de ===. Puesto que == simple no funcionará como se espera
+// porque la posición de 'a' está en el 1° (primer) caracter.
+if ($pos) {
+    $lengt=  count_chars($sql);
+    
+    $sql= substr($sql, 0,$pos);
+} 
+                //$sql= $Q->query;
+                //echo $sql;die;
 		//$sql  = "SELECT COUNT(*) as total FROM ".Dao::getTable($Q->Model).$Q->query;
 		
                 $Dar  = $Da->retrieve($sql, $Q->binds);

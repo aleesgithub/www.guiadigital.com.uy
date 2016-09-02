@@ -51,6 +51,7 @@ class Model extends Lib {
 	
 	public function fetch(\lib\dao\query\Query $Q = null){
 		//retorna array.
+                
 		return $this->Dao->fetch($this, $Q);		
 	}
 	

@@ -279,7 +279,7 @@ class MailController extends Controller{
             $Q1->add(new QueryAnd('estado','Pendiente'));
             $Q1->prepare();
             $cantDest=count($Destinatario->fetch($Q1));
-            echo $cantDest;
+            //echo $cantDest;
                 
         }
 }

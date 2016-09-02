@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-08-27 03:05:05
+<?php /* Smarty version Smarty-3.1.18, created on 2016-08-31 16:15:49
          compiled from "C:\xampp\htdocs\www.guiadigital.com.uy\application\templates\backend\layout\pagination.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1078555d61cf89db413-35859251%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2845957c6e6952313a0-56860092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6fcd85ed4488b46ad508e57096c28736232ffa6a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\www.guiadigital.com.uy\\application\\templates\\backend\\layout\\pagination.tpl',
-      1 => 1472259824,
+      1 => 1434483345,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1078555d61cf89db413-35859251',
+  'nocache_hash' => '2845957c6e6952313a0-56860092',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_55d61cf8a50233_92471865',
   'variables' => 
   array (
     'P' => 0,
@@ -28,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'last' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_57c6e695270a70_83502204',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55d61cf8a50233_92471865')) {function content_55d61cf8a50233_92471865($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['P']->value&&$_smarty_tpl->tpl_vars['P']->value->getLast()>1) {?>
+<?php if ($_valid && !is_callable('content_57c6e695270a70_83502204')) {function content_57c6e695270a70_83502204($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['P']->value&&$_smarty_tpl->tpl_vars['P']->value->getLast()>1) {?>
     <?php $_smarty_tpl->tpl_vars["first"] = new Smarty_variable(true, null, 0);?> 
     <?php $_smarty_tpl->tpl_vars["prev"] = new Smarty_variable(true, null, 0);?> 
     <?php $_smarty_tpl->tpl_vars["last"] = new Smarty_variable(true, null, 0);?> 

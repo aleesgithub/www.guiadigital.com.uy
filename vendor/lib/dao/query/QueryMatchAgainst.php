@@ -3,8 +3,8 @@ namespace lib\dao\query;
 use lib\dao\Dao;
 class QueryMatchAgainst extends QueryAbstract{
 	public $campo=null;
-        
-	public function __construct($field, $value = null,$campo=null){
+        public $Rel=null;
+	public function __construct($field, $value = null,$campo=null,$Rel=null){
 		
                 if(is_array($field) && !empty($field)){
 			$this->conditions = $field;
@@ -15,7 +15,8 @@ class QueryMatchAgainst extends QueryAbstract{
                 if($campo){
                     $this->campo=$campo;
                 }
-                
+                //si incluye la relevancia como dato.
+                if($Rel)$this->Rel=$Rel;
                         
 	}	
 	
@@ -32,8 +33,8 @@ class QueryMatchAgainst extends QueryAbstract{
 				//echo $result;
 			}
                        
-                        
-                       $result="MATCH (".$result.") Against ('".$value." IN BOOLEAN MODE') ";
+                       
+                       $result="MATCH (".$result.") Against ('".$value."' IN BOOLEAN MODE) ";
                         
 			//$result = (is_null($Q->query))? " WHERE $result":$result;
                         
@@ -44,8 +45,9 @@ class QueryMatchAgainst extends QueryAbstract{
                     $Q->query = str_replace("WHERE ", "WHERE ".$result." AND ", $Q->query);
                 }
                 
+                if($this->Rel)$this->campo.=", ".$result." AS Rel";
                 
-                echo '<br>';
+               
                
 	}
 }

@@ -1,1 +1,0 @@
-<!--<a href="/index/"><img src="/img/publicidad_lateral/publicidad_lateral_001.jpg" class="imagen_publicidad"></a>-->

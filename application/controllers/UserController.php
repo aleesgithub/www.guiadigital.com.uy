@@ -31,7 +31,7 @@ class UserController extends Controller{
                         /*
                         $usridentiti=$Auth->getStorage()->read();
                         if($usridentiti->rolRol=="ADM"){
-                            echo "pepe";
+                            //echo "pepe";
                         }
                          * 
                          */
@@ -63,18 +63,18 @@ class UserController extends Controller{
                     //campos obligatorios
                     $this->required($this->Model, array('usr','pwd','role','nombre','apellido','email','language'));
                     $this->Model->imagen = 'nofoto.png';
-                    //$this->Model->estado='Vigente';
+                    $this->Model->estado='Vigente';
+                    //$this->Model->sector='Nube';
                     $validator=new Validator();
-
+                    
                     $validator->validoModel($this->Model);
                     $this->Model->create();
-                    
+
                     if($_FILES['imagen']['error'] == UPLOAD_ERR_OK){
                         $tmp_name = $_FILES["imagen"]["tmp_name"];
                         $name = $_FILES["imagen"]["name"];
                         $extension = substr($name, strripos($name, '.'));
                         $pre=  $this->getName();
-                        
                         $name = $pre.'_'.$this->Model->id.$extension;
                         move_uploaded_file($tmp_name, $this->Config->image->uploads->path.$name);
                         $this->Model->imagen = $name;
@@ -83,8 +83,7 @@ class UserController extends Controller{
                         $image->save($this->Config->image->uploads->mini.$name);
                         
                     }
-                    $this->Model->pwd = hash('sha512', $this->Model->pwd);
-                    
+                    $this->Model->pwd = hash(sha512, $this->Model->pwd);
                     $this->Model->update();
                     $this->clean($this->Model);
                     $this->View->assign('msg', array('success', 'El registro se ha guardado correctamente'));

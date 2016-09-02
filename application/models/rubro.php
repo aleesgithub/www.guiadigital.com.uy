@@ -16,22 +16,27 @@ class Rubro extends Model{
                 $parametros = explode(' ',$param);
                 $Rubro      = Factory::create(FactoryModel::getInstance(), 'Rubro');
                 $Q          = new Query($Rubro);
-                $Q->prepare($this);
-                $rubros=$this->fetch();
+                //$Q->prepare($this);
+                $rubros=$this->fetch($Q);
+                
                 $resultado=null;
                 foreach ($rubros as $key => $value) {
                     $resultado[]=$value[subrubro];
+                    
                 }
+                $resultado= array_map(strtolower, $resultado);
+                $retorno='';
                 foreach ($parametros as $key => $value) {
                     
-                    if (in_array($value, $resultado)) {
-                        return $value;
+                    if (array_search(strtolower($value), $resultado)) {
+                        $retorno.=",". $value;
                     }
+                    
                 } 
-                if (in_array($param, $resultado)) {
-                        return $param;
-                        
-                }
+                
+               
+                return substr($retorno, 1);
+                
             }else{
                 return null;
             }
