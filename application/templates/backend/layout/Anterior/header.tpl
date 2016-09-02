@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
 <title>{$Tr->_("nombre_aplicacion")|capitalize}</title>
 <link rel="stylesheet" type="text/css" href="/css/backend.css" />
+<!--<link rel="stylesheet" type="text/css" href="/css/formularios.css" />-->
 <link rel="stylesheet" type="text/css" href="/css/{$css}.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <script type='text/javascript' src='/js/jquery-1.4.2.min.js'></script>
@@ -22,7 +24,19 @@
   #resizable { width: 150px; height: 150px; padding: 0.5em; z-index: 12}
   #resizable h3 { text-align: center; margin: 0; }
 </style>
+
+
+
+
+
+
+
+
+
+
+
 </head>
+
 <body  class="backend" onLoad="Start()">
     
 <div id='msg' class='msg'>

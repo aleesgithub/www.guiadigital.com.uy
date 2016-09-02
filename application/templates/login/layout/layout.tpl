@@ -1,9 +1,23 @@
-<div>{include file = 'login/layout/header.tpl'}</div>
-<div class="login_content">{include file = "login/$content"}</div>
-<div class="login_footer">{include file = 'login/layout/footer.tpl'}</div>
-<div class="fondologin"><img src="/img/inicio.jpg" alt="" width="50%"/></div>
+<!-- Cabezal -->
+{include file = 'frontend/layout/head.tpl'}
 
+<body>
 
-<div class="login_mensaje">{include file = 'login/layout/messages.tpl'}</div>
-<div id="reloj" class="reloj"></div>
-<div id="fecha" class="fecha"></div>
+    <div class="container-fluid well" id="container-body">
+        <div class="row">
+    
+            <!-- Menú -->
+            {include file = 'login/layout/menu.tpl'}
+
+            <!-- Contenido -->
+            {include file = "login/$content"}
+
+            <!-- Footer -->
+            {include file = 'frontend/layout/footer.tpl'}
+
+            <!-- Librerías -->
+            {include file = 'frontend/layout/librerias.tpl'}
+            
+        </div>
+    </div>
+</body>

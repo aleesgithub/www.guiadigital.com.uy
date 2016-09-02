@@ -11,10 +11,10 @@
 <div class="empresa">
     {assign var="direcciones" value="" }
     {foreach $rows as $row}
-    {if $row.estado=='Vigente'}
+        {if $row.estado=='Vigente'}
     <table width='100%'>
         <tr>
-            <td width='75%'>{$row.empresaId}<label>{$row.nombre}</label></td>
+            <td width='75%'><label>{$row.nombre}</label></td>
             <td>{foreach $enlaces as $enlace}
                     {foreach $enlace as $key}
                         {if $key.empresaId==$row.id}
@@ -54,7 +54,7 @@
             <td colspan="2">
                 {foreach $rubros as $rubro}
                     {foreach $rubro as $key}
-                        {if $key.empresaId==$row.id}
+                        {if $key.empresaId==$row.empresaId}
                             <span onclick="location.href='/empresa/listar/?search={$key.subrubro}&advanced=true'" id='{$key.rubroId}'>{$key.subrubro}</span>
                         {/if}
                     {/foreach}
@@ -65,9 +65,23 @@
             <td colspan="2"></td>
         </tr>
     </table>
-    {/if}
+    
+        
+            
+            
+           
+        
+            
+            
+            
+               
+            
+            <hr>
+        {/if}
     {/foreach}        
 <div class="backend_paginar">{include file = 'frontend/layout/pagination.tpl'}</div>
 </div>
+  
+
 <input type="hidden" name="direcciones" id="direcciones" value="{$direcciones}">  
 <script type="text/javascript">initialize();</script>
