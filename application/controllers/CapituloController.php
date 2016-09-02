@@ -15,6 +15,7 @@ class CapituloController extends Controller{
 	public function index(){
             
             try{
+                //prueba github ultima hora
 		$proyectoId=$this->getParam('proyectoId');
                 $Q = new Query($this->Model);	
                 if($proyectoId){
